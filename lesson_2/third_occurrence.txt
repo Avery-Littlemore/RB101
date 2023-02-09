@@ -1,0 +1,31 @@
+# Pseudo-Code to build a method that determines the index of the 3rd occurrence of a given character 
+# in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method 
+# should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil
+
+START
+
+GET string from user
+SET user_str = string from user
+
+GET character from user
+SET user_char = character from user
+
+SET iterator = 0
+SET occurence = 0
+SET index == nil
+
+WHILE iterator < length of user_str
+  READ character in the iterator position of the user_str
+  check if the character is equal to our user_char
+  IF user_char == character in iterator position 
+    occurrence = occurrence + 1
+    IF occurrence == 3
+      index = iterator
+
+
+IF occurrence >= 3
+  PRINT index
+ELSE
+  PRINT nil
+
+END

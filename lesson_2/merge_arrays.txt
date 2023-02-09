@@ -1,0 +1,29 @@
+# Pseudo-Code to build a method that takes two arrays of numbers and returns the 
+# result of merging the arrays. The elements of the first array should become the 
+# elements at the even indexes of the returned array, while the elements of the 
+# second array should become the elements at the odd indexes
+
+START
+
+GET first array of numbers from user
+SET first_array = READ input from user
+
+GET second array of numbers from user
+SET second_array = READ input from user
+
+SET first_iterator = 0
+SET second_iterator = 0
+SET merged_array = empty array
+
+WHILE first_iterator < first_array OR second_iterator < second_array
+  IF first_iterator == second_iterator
+    push the element in the first_iterator position from first_array into merged array
+    first_iterator = first_iterator + 1
+  ELSE
+    push the element in the second_iterator position from second_array into merged array
+    second_iterator = second_iterator + 1
+
+
+  PRINT merged_array
+
+END

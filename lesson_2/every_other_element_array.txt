@@ -1,0 +1,20 @@
+# Pseudo-Code to build a method that takes an array of integers, and returns a new array 
+# with every other element from the original array, starting with the first element. 
+
+START
+
+GET array of integers
+
+SET int_array = array of integers 
+SET other_array = empty array
+SET iterator = 0
+
+WHILE iterator < length of int_array
+  IF modulus of iterator is zero
+    push the element of int_array in iterator position into other_array
+
+  iterator = iterator + 1   
+  
+PRINT other_array
+
+END

@@ -1,0 +1,15 @@
+# Pseudo-Code to build a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+START
+
+READ array of strings
+
+SET iterator = 0
+SET concat = empty string
+
+WHILE iterator < length of array of strings
+  concat = concat + pushed string in interator position of the array
+
+PRINT concat
+
+END

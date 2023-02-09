@@ -1,0 +1,6 @@
+Git branches mdeium: https://medium.com/@eamonocallaghan/why-you-should-be-using-git-branches-in-ls-101-ee2864009f07 
+
+After completing a course assignment, you may request a code review in the lesson discussion forum.
+Code review guidelines: https://launchschool.com/gists/8bbb0e2a
+
+Formal study groups can be joined, such as the RB109 Assessments study groups

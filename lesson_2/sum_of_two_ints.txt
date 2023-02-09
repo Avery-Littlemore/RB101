@@ -1,0 +1,10 @@
+# Pseudo-Code to build a method that returns the sum of two integers
+
+START
+
+SET first_int variable = first input converted to an integer
+SET second_int variable = second input converted to an integer
+
+PRINT first_int + second_int
+
+END
