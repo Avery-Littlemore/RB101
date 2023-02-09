@@ -25,6 +25,8 @@ elsif operator == '4'
   # if we had done to_i, the result would have been an integer division (AKA, round down to nearest integer)
 end
 
+# if is not a block, so we can initialize a variable inside of it
+
 
 Kernel.puts("The result is #{result}")
 
