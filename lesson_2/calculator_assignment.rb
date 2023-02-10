@@ -3,28 +3,53 @@
 # perform the operation on the two numbers
 # output the answer
 
+require 'yaml'
+LANGUAGE = 'es'
+
+MESSAGES = YAML.load_file('calculator_messages.yml')
+# puts MESSAGES.inspect
+
+def messages(message, lang='en')
+  MESSAGES[lang][message]
+end
+
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
 
 def valid_number?(num)
+  if num == '0'
+    return true
+  end
+  if num.count("a-zA-Z") > 0
+    return false
+  end
   num.to_i() != 0
 end
 
+# another option would be:
+=begin
+def integer?(input)
+  input.to_i.to_s == input
+end
+=end
+
 def operation_to_message(op)
-  case op
-  when '1'
-    'Adding'
-  when '2'
-    'Subtracting'
-  when '3'
-    'Multiplying'
-  when '4'
-    'Dividing'
-  end
+  word = case op
+         when '1'
+           return 'Adding'
+         when '2'
+           return 'Subtracting'
+         when '3'
+           return 'Multiplying'
+         when '4'
+           return 'Dividing'
+         end
+  x = 'useless line of code to test return value'
+  # word # redundant as shown, but an alternate to writing return on each of the case whens
 end
 
-prompt("Welcome to Calculator! Enter your name: ")
+prompt(messages('welcome', LANGUAGE))
 
 name = ''
 loop do
