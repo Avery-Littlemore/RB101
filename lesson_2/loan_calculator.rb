@@ -10,7 +10,6 @@
 # p = loan amount
 # j = monthly interest rate
 # n = loan duration in months
-require "pry"
 
 def pos_number?(num)
   (num.to_i.to_s == num || num.to_f.to_s == num) && num.to_f > 0
